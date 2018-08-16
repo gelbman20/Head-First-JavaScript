@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My playlist</title>
+  <style>
+    .redtext {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<h1>My awesome playlist</h1>
+<ul id="playlist">
+  <li id="song1"></li>
+  <li id="song2"></li>
+  <li id="song3"></li>
+</ul>
+<script>
+  function init() {
+
+    function addSongs(element, str) {
+      var element = document.getElementById(element);
+      return element.innerHTML = str;
+    }
+
+    function addRedColor(element, className) {
+      var element = document.getElementById(element);
+      return element.setAttribute('class', className);
+    }
+
+    function getAttributes(element, attribute) {
+      var  element = document.getElementById(element);
+      var result = element.getAttribute(attribute)
+      return console.log(result);
+    }
+
+    addSongs('song1', 'Lorem 1');
+    addSongs('song2', 'Lorem 3');
+    addSongs('song3', 'Lorem 2');
+
+    addRedColor('song1', 'redtext');
+
+    getAttributes('song1', 'class')
+  }
+
+  window.onload = init;
+</script>
+</body>
+</html>

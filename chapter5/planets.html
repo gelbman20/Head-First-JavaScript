@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Planets</title>
+</head>
+<body>
+<h1>Green Planet</h1>
+<p id="greenplanet">All is well</p>
+<h1>Red Planet</h1>
+<p id="redplanet">Nothing to report</p>
+<h1>Blue Planet</h1>
+<p id="blueplanet">All systems A-OK</p>
+</body>
+
+<script>
+  function init() {
+    let planet = document.getElementById('greenplanet');
+    planet.innerHTML = 'Red Alert: hit by phaser fire!';
+  }
+
+  window.onload = init;
+</script>
+</html>

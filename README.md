@@ -1,2 +1,6 @@
-# Head-First-JavaScript
-Javascript lessons with hands-on lessons from Head First
+Code for Head First JavaScript Programming, by Elisabeth Robson and Eric Freeman.
+Published in March, 2014.
+
+http://wickedlysmart.com/hfjs
+
+
